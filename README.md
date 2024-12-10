@@ -2,7 +2,7 @@
 
 This project provides a tool to list all Python files in a specified folder and its subdirectories, displaying their contents and organizing them into manageable chunks. The program breaks the output into smaller parts to bypass character limits in platforms like ChatGPT, and includes a custom graphical interface for user interaction.
 
-![Screenshot](Screenshot%202024-12-03%20132412.png)
+![Screenshot](Screenshot%202024-12-11%001440.png)
 
 ## Features
 
