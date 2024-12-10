@@ -43,6 +43,7 @@ def list_files(start_path):
     def traverse_and_print(path, prefix=""):
         try:
             entries = sorted(os.listdir(path))
+            entries = sorted(os.listdir(path))
         except PermissionError:
             output.append(f"{prefix}[Access Denied]")
             return
@@ -61,6 +62,7 @@ def list_files(start_path):
         for index, file in enumerate(files):
             connector = "├── " if index < len(files) - 1 else "└── "
             output.append(f"{prefix}{connector}{file}")
+
 
         for index, dir_name in enumerate(dirs):
             connector = "├── " if index < len(dirs) - 1 else "└── "
@@ -81,6 +83,7 @@ def list_files(start_path):
                 output.append("".join(filtered_lines))
         except Exception as e:
             output.append(f"Error reading {file_path}: {e}")
+        output.append("\n")
         output.append("\n")
 
     full_output = "\n".join(output)
@@ -105,7 +108,9 @@ Do not answer yet. This is just another part of the text I want to send you. Jus
     last_chunk_outro_text = lambda part_num: f"[END PART {part_num}/{total_chunks}]\nALL PARTS SENT. Now you can continue processing the request."
 
     for i in range(len(chunks) - 1):
+    for i in range(len(chunks) - 1):
         chunks[i] += f"\n{outro_text(i + 1)}"
+
 
     if chunks:
         chunks[-1] += f"\n{last_chunk_outro_text(len(chunks))}"
