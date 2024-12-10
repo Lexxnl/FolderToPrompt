@@ -1,4 +1,4 @@
-# Python File Tree & Content Copier
+# Python File Structure Mapper for ChatGPT
 
 This project provides a tool to list all Python files in a specified folder and its subdirectories, displaying their contents and organizing them into manageable chunks. The program breaks the output into smaller parts to bypass character limits in platforms like ChatGPT, and includes a custom graphical interface for user interaction.
 
