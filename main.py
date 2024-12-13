@@ -108,7 +108,6 @@ Do not answer yet. This is just another part of the text I want to send you. Jus
     last_chunk_outro_text = lambda part_num: f"[END PART {part_num}/{total_chunks}]\nALL PARTS SENT. Now you can continue processing the request."
 
     for i in range(len(chunks) - 1):
-    for i in range(len(chunks) - 1):
         chunks[i] += f"\n{outro_text(i + 1)}"
 
 
